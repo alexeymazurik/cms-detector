@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CMS Detector</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <h2>CMS Detector</h2>
+    <p>
+      This site is used for detecting Content Management System of url you input below. So in the field below input URL you need to check.
+    </p>
+    <div class="alert alert-danger" role="alert">
+      <b>Error!</b><span> Your URL is incorrect. Please try another one. </span>
+    </div>
+    <div class="panel">
+      <form id="target">
+        <div class="row">
+          <div class="col-md-1 text-right">
+            <div class="form-group">
+              <label for="url" class="control-label">URL:</label>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="form-group">
+              <input type="text" name="url" id="url" class="form-control" required="" />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button type="submit" id="submit-btn" class="btn btn-primary" data-loading-text="Loading..." autocomplete="off">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="result-table">
+      <h3>Results:</h3>
+      <table id="result" class="table table-bordered">
+        <thead>
+            <tr>
+              <td>ID</td>
+              <td>Site name</td>
+              <td>CMS</td>
+              <td>HTML 5</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+<script src="../scripts/script.js"></script>
+</body>
+</html>

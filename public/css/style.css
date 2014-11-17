@@ -1,0 +1,23 @@
+.preload {
+    display: none;
+}
+
+.form-group {
+    display: inline;
+}
+
+.row label {
+    margin-top: 8px;
+}
+
+.btn-primary{
+    width: 100px;
+}
+
+.result-table {
+    margin-top: 40px;
+}
+
+.panel {
+    padding: 10px;
+}
